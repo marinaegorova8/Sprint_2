@@ -6,12 +6,10 @@ class EmployeeSalary:
         self.rest_days = rest_days
         self.email = email
 
-
     @classmethod
     def get_hours(cls, name, rest_days, email):
         hours = (7 - rest_days) * 8
         return cls(name, hours, rest_days, email)
-
 
     @classmethod
     def get_email(cls, name, hours, rest_days):
